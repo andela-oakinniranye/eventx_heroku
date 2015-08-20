@@ -23,18 +23,27 @@ gem 'font-awesome-sass'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
+gem 'draper'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'rspec-rails'
+gem 'capybara'
 gem 'omniauth-facebook'
 gem "omniauth-google-oauth2"
 gem 'omniauth-twitter'
-gem 'omniauth-tumblr'
-# gem 'omniauth-linkedin-oauth2'
-
 gem 'omniauth-linkedin'
 gem 'omniauth-github'
+gem 'omniauth-tumblr'
 gem "figaro"
+gem 'responders'
+gem 'launchy'
+
+# for uploading pictures
+gem 'carrierwave'
+
+# requires the imagemagick >=6.4 application
+gem 'rmagick'
+gem 'cloudinary'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -45,7 +54,10 @@ gem "figaro"
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
-
+  gem 'pry'
+  gem 'selenium-webdriver'
+  gem 'database_cleaner'
+  # gem 'capybara-webkit'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
